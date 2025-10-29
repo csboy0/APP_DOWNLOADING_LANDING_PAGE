@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, RefreshCw, Clock, CheckCircle, XCircle, AlertCircle } from 'lucide-react';
+import { ArrowLeft, RefreshCw, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const RefundPolicy = () => {
   return (
     <div className="min-h-screen bg-dark text-white">
       {/* Header */}
-      <motion.header 
+      <motion.header
         className="bg-gray-900/50 backdrop-blur-sm border-b border-gray-800"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -34,305 +34,141 @@ const RefundPolicy = () => {
       {/* Main Content */}
       <main className="w-full max-w-[80%] mx-auto px-4 md:px-6 py-8 md:py-12">
         {/* Hero Section */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-            Refund &{' '}
+            SHOTBOX{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Returns Policy
+              Refund & Returns Policy
             </span>
           </h1>
           <p className="text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
-            We want you to be completely satisfied with your Shotbox experience. This policy outlines our refund and return procedures.
+            Effective Date: 11th October 2025
           </p>
-          <p className="text-sm text-secondary mt-4">
-            Last updated: October 11, 2025
+          <p className="text-sm text-secondary mt-2">
+            Company: BMZ WORLDWIDE OPC PVT. LTD.
           </p>
         </motion.div>
 
-        {/* Quick Overview */}
+        {/* Policy Content */}
         <motion.div
-          className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-gray-800 mb-16"
+          className="bg-gray-900/50 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-gray-800 space-y-8"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Policy{' '}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Overview
-            </span>
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-dark" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Fair Process</h3>
-              <p className="text-secondary">We provide fair and transparent refund processes for all users.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-dark" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Quick Resolution</h3>
-              <p className="text-secondary">Most refund requests are processed within 5-7 business days.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <AlertCircle className="w-8 h-8 text-dark" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Clear Guidelines</h3>
-              <p className="text-secondary">Clear guidelines help you understand what's eligible for refunds.</p>
-            </div>
+          <div className="flex items-center space-x-3 mb-6">
+            <FileText className="w-6 h-6 text-primary" />
+            <h2 className="text-3xl font-bold">Refund and Returns Policy</h2>
+          </div>
+          <p className="text-secondary leading-relaxed">
+            Welcome to <span className="text-primary font-semibold">SHOTBOX</span>, India’s first AI-powered vertical OTT entertainment platform.
+            This Refund and Returns Policy explains how refunds, subscriptions, and digital purchases are managed on SHOTBOX.
+            By accessing or using our platform, you agree to the following terms.
+          </p>
+
+          {/* Section 1 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">1. No Refund on Digital Purchases</h3>
+            <p className="text-secondary leading-relaxed">
+              All digital purchases—whether daily, weekly, monthly, or yearly subscriptions, or individual
+              content unlocks via coins—are <span className="text-white font-semibold">non-refundable</span> once accessed or streamed.
+              This includes accidental purchases, change of mind, or unused content. Please review your selection carefully before confirming payment.
+            </p>
+          </div>
+
+          {/* Section 2 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">2. Refund Eligibility (Exceptional Cases)</h3>
+            <p className="text-secondary mb-3">
+              Although all sales are final, refunds may be approved only under exceptional circumstances, such as:
+            </p>
+            <ul className="text-secondary space-y-2 ml-6 list-disc">
+              <li>You were charged multiple times for the same transaction.</li>
+              <li>A technical issue occurred (e.g., coins deducted but the video did not unlock) and couldn’t be resolved by our support team.</li>
+              <li>The purchased content was unavailable or significantly different from what was advertised.</li>
+            </ul>
+            <p className="text-secondary mt-3">
+              <strong>Important:</strong> Refund requests must be submitted within <span className="text-white font-semibold">48 hours</span> of the transaction to be considered.
+            </p>
+          </div>
+
+          {/* Section 3 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">3. How to Request a Refund</h3>
+            <p className="text-secondary mb-3">If your case meets the above conditions, please email us at <a href="mailto:help@shotbox.in" className="text-primary underline">help@shotbox.in</a> with:</p>
+            <ul className="text-secondary space-y-2 ml-6 list-disc">
+              <li>Your registered email or phone number</li>
+              <li>Transaction ID and a screenshot of payment</li>
+              <li>A short description of the issue</li>
+            </ul>
+            <p className="text-secondary mt-3">
+              Our team will review your request and respond within <span className="text-white font-semibold">5 business days</span>.
+              If approved, refunds will be credited to your original payment method within <span className="text-white font-semibold">7–10 working days</span>.
+            </p>
+          </div>
+
+          {/* Section 4 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">4. In-App Coin Purchases</h3>
+            <p className="text-secondary">
+              Coins purchased within the app are <span className="text-white font-semibold">non-refundable</span> once used.
+              Unused coins remain in your wallet and do not expire. You can use them for future content unlocks.
+            </p>
+          </div>
+
+          {/* Section 5 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">5. Subscriptions via App Stores</h3>
+            <p className="text-secondary">
+              If you subscribed through <span className="text-white font-semibold">Google Play</span> or the <span className="text-white font-semibold">Apple App Store</span>,
+              all refund requests must be made directly through the respective store’s refund process.
+              SHOTBOX cannot process refunds for purchases made via third-party platforms.
+            </p>
+          </div>
+
+          {/* Section 6 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">6. Subscription Upgrades and Downgrades</h3>
+            <p className="text-secondary mb-3">
+              If you upgrade your plan (e.g., from monthly to yearly), you may request a downgrade within 30 days of purchase. In such cases:
+            </p>
+            <ul className="text-secondary space-y-2 ml-6 list-disc">
+              <li>Your plan will be adjusted to the lower tier.</li>
+              <li>The balance will be credited to your SHOTBOX wallet as non-withdrawable credits for future purchases.</li>
+            </ul>
+            <p className="text-secondary mt-3">
+              <strong>Note:</strong> Downgrade requests after 30 days will not be accepted.
+            </p>
+          </div>
+
+          {/* Section 7 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">7. Auto-Renewal Policy</h3>
+            <p className="text-secondary">
+              All SHOTBOX subscriptions renew automatically by default. To avoid renewal charges, please cancel your subscription before the renewal date through your:
+            </p>
+            <ul className="text-secondary space-y-2 ml-6 list-disc mt-2">
+              <li>SHOTBOX Account Settings, or</li>
+              <li>Google Play / Apple App Store</li>
+            </ul>
+          </div>
+
+          {/* Section 8 */}
+          <div>
+            <h3 className="text-2xl font-semibold mb-3 text-primary">8. Contact Us</h3>
+            <p className="text-secondary mb-3">For any questions about refunds, purchases, or subscriptions, please contact us at:</p>
+            <ul className="text-secondary space-y-2 ml-6">
+              <li><span className="text-white font-semibold">Company Name:</span> BMZ WORLDWIDE OPC PVT. LTD.</li>
+              <li><span className="text-white font-semibold">Email:</span> <a href="mailto:admin@shotbox.in" className="text-primary underline">admin@shotbox.in</a></li>
+            </ul>
           </div>
         </motion.div>
-
-        {/* Policy Sections */}
-        <div className="max-w-4xl mx-auto space-y-12">
-          {/* Eligibility */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Refund{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Eligibility
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary flex items-center">
-                    <CheckCircle className="w-5 h-5 mr-2" />
-                    Eligible for Refund
-                  </h3>
-                  <ul className="text-secondary space-y-2 ml-7">
-                    <li>• Duplicate purchases made within 24 hours</li>
-                    <li>• Technical issues preventing app functionality</li>
-                    <li>• Unauthorized transactions on your account</li>
-                    <li>• Service outages lasting more than 48 hours</li>
-                    <li>• Billing errors or incorrect charges</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-red-400 flex items-center">
-                    <XCircle className="w-5 h-5 mr-2" />
-                    Not Eligible for Refund
-                  </h3>
-                  <ul className="text-secondary space-y-2 ml-7">
-                    <li>• Change of mind after 7 days of purchase</li>
-                    <li>• Rewards already redeemed or used</li>
-                    <li>• Account suspension due to policy violations</li>
-                    <li>• Third-party payment processing fees</li>
-                    <li>• Services used beyond the refund period</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Refund Process */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Refund{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Process
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-dark font-bold text-sm">1</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Submit Request</h3>
-                    <p className="text-secondary">Contact our support team with your refund request, including your account details and reason for the refund.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-dark font-bold text-sm">2</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Review Process</h3>
-                    <p className="text-secondary">Our team will review your request within 24-48 hours and verify the eligibility based on our policy.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-dark font-bold text-sm">3</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Processing</h3>
-                    <p className="text-secondary">If approved, the refund will be processed to your original payment method within 5-7 business days.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-dark font-bold text-sm">4</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Confirmation</h3>
-                    <p className="text-secondary">You'll receive an email confirmation once the refund has been processed successfully.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Time Limits */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Time{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Limits
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Standard Refunds</h3>
-                  <p className="text-secondary">Refund requests must be submitted within 30 days of the original transaction date.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Technical Issues</h3>
-                  <p className="text-secondary">For technical issues, refund requests can be submitted within 60 days of the problem occurrence.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Unauthorized Transactions</h3>
-                  <p className="text-secondary">Reports of unauthorized transactions must be made immediately upon discovery.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Processing Time</h3>
-                  <p className="text-secondary">Approved refunds are typically processed within 5-7 business days, depending on your payment method.</p>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Payment Methods */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Payment{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Methods
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Credit/Debit Cards</h3>
-                  <p className="text-secondary">Refunds are processed back to the original card used for the purchase. Processing time: 5-7 business days.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">PayPal</h3>
-                  <p className="text-secondary">PayPal refunds are processed immediately and typically appear in your account within 24 hours.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Apple Pay / Google Pay</h3>
-                  <p className="text-secondary">Refunds are processed through the underlying payment method (card or bank account).</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Bank Transfers</h3>
-                  <p className="text-secondary">Bank transfer refunds may take 7-10 business days depending on your bank's processing time.</p>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Special Circumstances */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Special{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Circumstances
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Account Closure</h3>
-                  <p className="text-secondary">If you close your account, any unused rewards or credits may be forfeited unless specifically requested for refund within 30 days.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Service Discontinuation</h3>
-                  <p className="text-secondary">If we discontinue a service, users will be notified 30 days in advance and may be eligible for prorated refunds.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Force Majeure</h3>
-                  <p className="text-secondary">In cases of force majeure events affecting our services, refund policies may be adjusted with appropriate notice to users.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Dispute Resolution</h3>
-                  <p className="text-secondary">If you disagree with a refund decision, you can escalate the matter through our dispute resolution process.</p>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Contact Information */}
-          <motion.section
-            className="text-center"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.6 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Need{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Help?
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <p className="text-secondary mb-6">
-                If you have questions about refunds or need to submit a refund request, please contact our support team:
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-primary">📧</span>
-                  <a href="mailto:support@shotbox.in" className="text-primary hover:text-accent transition-colors duration-300">
-                    support@shotbox.in
-                  </a>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-primary">📞</span>
-                  <span className="text-secondary">+91 9967127959</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-primary">💬</span>
-                  <span className="text-secondary">Live chat available 24/7 in the app</span>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-        </div>
       </main>
-
-      {/* Global Footer is rendered by App.js */}
     </div>
   );
 };
