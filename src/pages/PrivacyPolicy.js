@@ -294,8 +294,8 @@ const PrivacyPolicy = () => {
               </p>
               <div className="flex items-center justify-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:privacy@shotbox.com" className="text-primary hover:text-accent transition-colors duration-300">
-                  privacy@shotbox.com
+                <a href="mailto:support@shotbox.in" className="text-primary hover:text-accent transition-colors duration-300">
+                  support@shotbox.in
                 </a>
               </div>
             </div>

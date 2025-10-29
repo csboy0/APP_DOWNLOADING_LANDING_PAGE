@@ -4,7 +4,7 @@ import { ArrowLeft, Trash2, AlertTriangle, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const DeleteAccount = () => {
-  const supportEmail = 'support@shotbox.com';
+  const supportEmail = 'support@shotbox.in';
 
   return (
     <div className="min-h-screen bg-dark text-white">

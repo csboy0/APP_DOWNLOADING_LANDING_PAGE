@@ -49,7 +49,7 @@ Our Values:
 
 Contact Information:
 - Email: support@shotbox.com
-- Phone: +1 (555) 123-4567
+- Phone: +91 9967127959
 - Address: San Francisco, CA`
         };
         
@@ -139,7 +139,7 @@ You can opt out of marketing communications while still receiving essential serv
 
 If you have any questions about this Privacy Policy or our data practices, please contact us:
 - Email: privacy@shotbox.com
-- Phone: +1 (555) 123-4567`
+- Phone: +91 9967127959`
         };
         
       case 'Refund_and_Returns_Policy':
@@ -224,7 +224,7 @@ If you disagree with a refund decision, you can escalate the matter through our 
 
 For refund requests or questions:
 - Email: support@shotbox.com
-- Phone: +1 (555) 123-4567
+- Phone: +91 9967127959
 - Live chat available 24/7 in the app`
         };
         
@@ -319,7 +319,7 @@ CONTACT SUPPORT
 
 If you can't find the answer you're looking for, our support team is here to help you 24/7:
 - Email: support@shotbox.com
-- Phone: +1 (555) 123-4567
+- Phone: +91 9967127959
 - Live chat available in the app`
         };
         
@@ -381,7 +381,7 @@ CONTACT INFORMATION:
 
 If you have questions about account deletion:
 - Email: support@shotbox.com
-- Phone: +1 (555) 123-4567
+- Phone: +91 9967127959
 - Live chat available in the app
 
 DISPUTE RESOLUTION:

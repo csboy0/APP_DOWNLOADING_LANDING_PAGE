@@ -21,10 +21,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Youtube, href: '#', label: 'YouTube' }
+    { icon: Facebook, href: 'https://www.facebook.com/share/1JiBEjUwTQ/', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/official_shotbox', label: 'Instagram' },
+    { icon: Youtube, href: 'https://youtube.com/@shotboxapp?si=2rSIt5l_-CwAu5vK', label: 'YouTube' }
   ];
 
   return (
@@ -54,11 +53,11 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center justify-center md:justify-start space-x-3 text-secondary text-sm md:text-base">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>support@shotbox.com</span>
+                <span>support@shotbox.in</span>
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-3 text-secondary text-sm md:text-base">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9967127959</span>
               </div>
             </div>
           </motion.div>
@@ -122,7 +121,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-secondary text-xs md:text-sm">
-              © 2024 Shotbox. All rights reserved.
+              © 2025 BMZ Worldwide OPC Pvt.Ltd. All right reserved.
             </p>
           </div>
         </motion.div>

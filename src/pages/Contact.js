@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Phone, Mail, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const CONTACT_NUMBER = '8657223982';
-const CONTACT_EMAIL = 'info@jugnu.app';
-const WHATSAPP_NUMBER = '918657223982'; // include country code for wa.me
+const CONTACT_NUMBER = '919967127959';
+const CONTACT_EMAIL = 'support@shotbox.in';
+const WHATSAPP_NUMBER = '919967127959'; // include country code for wa.me
 
 const Contact = () => {
   return (

@@ -314,13 +314,13 @@ const RefundPolicy = () => {
               <div className="space-y-4">
                 <div className="flex items-center justify-center space-x-3">
                   <span className="text-primary">📧</span>
-                  <a href="mailto:support@shotbox.com" className="text-primary hover:text-accent transition-colors duration-300">
-                    support@shotbox.com
+                  <a href="mailto:support@shotbox.in" className="text-primary hover:text-accent transition-colors duration-300">
+                    support@shotbox.in
                   </a>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <span className="text-primary">📞</span>
-                  <span className="text-secondary">+1 (555) 123-4567</span>
+                  <span className="text-secondary">+91 9967127959</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <span className="text-primary">💬</span>

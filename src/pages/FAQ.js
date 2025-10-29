@@ -287,7 +287,7 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:support@shotbox.com"
+                href="mailto:support@shotbox.in"
                 className="bg-gradient-primary text-dark px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
               >
                 Contact Support
@@ -300,8 +300,8 @@ const FAQ = () => {
               </a>
             </div>
             <div className="mt-8 text-secondary">
-              <p>📧 support@shotbox.com</p>
-              <p>📞 +1 (555) 123-4567</p>
+              <p>📧 support@shotbox.in</p>
+              <p>📞 +91 9967127959</p>
               <p>💬 Live chat available in the app</p>
             </div>
           </div>
