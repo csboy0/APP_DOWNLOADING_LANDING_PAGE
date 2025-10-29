@@ -301,9 +301,7 @@ const FAQ = () => {
             </div>
             <div className="mt-8 text-secondary">
               <p>📧 support@shotbox.in</p>
-              <p>📞 +91 9967127959</p>
-              <p>💬 Live chat available in the app</p>
-            </div>
+              <p>📞 +91 9967127959</p>  </div>
           </div>
         </motion.div>
       </main>
