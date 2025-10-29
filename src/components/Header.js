@@ -7,9 +7,9 @@ const navItems = [
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
   { to: '/faq', label: 'FAQ' },
-  { to: '/terms', label: 'Terms' },
-  { to: '/privacy', label: 'Privacy' },
-  { to: '/refund', label: 'Refund' }
+  { to: '/terms', label: 'Terms & Conditions' },
+  { to: '/privacy', label: 'Privacy Policy' },
+  { to: '/refund', label: 'Refund Policy' }
 ];
 
 export default function Header() {
