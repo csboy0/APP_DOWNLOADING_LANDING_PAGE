@@ -100,7 +100,7 @@ const RefundPolicy = () => {
           {/* Section 3 */}
           <div>
             <h3 className="text-2xl font-semibold mb-3 text-primary">3. How to Request a Refund</h3>
-            <p className="text-secondary mb-3">If your case meets the above conditions, please email us at <a href="mailto:help@shotbox.in" className="text-primary underline">help@shotbox.in</a> with:</p>
+            <p className="text-secondary mb-3">If your case meets the above conditions, please email us at <a href="mailto:support@shotbox.in" className="text-primary underline">support@shotbox.in</a> with:</p>
             <ul className="text-secondary space-y-2 ml-6 list-disc">
               <li>Your registered email or phone number</li>
               <li>Transaction ID and a screenshot of payment</li>
@@ -164,7 +164,7 @@ const RefundPolicy = () => {
             <p className="text-secondary mb-3">For any questions about refunds, purchases, or subscriptions, please contact us at:</p>
             <ul className="text-secondary space-y-2 ml-6">
               <li><span className="text-white font-semibold">Company Name:</span> BMZ WORLDWIDE OPC PVT. LTD.</li>
-              <li><span className="text-white font-semibold">Email:</span> <a href="mailto:admin@shotbox.in" className="text-primary underline">admin@shotbox.in</a></li>
+              <li><span className="text-white font-semibold">Email:</span> <a href="mailto:support@shotbox.in" className="text-primary underline">support@shotbox.in</a></li>
             </ul>
           </div>
         </motion.div>
