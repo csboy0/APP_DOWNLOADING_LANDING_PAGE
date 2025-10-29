@@ -1,13 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowLeft, Shield, Eye, Lock, Database, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowLeft, Shield, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-dark text-white">
       {/* Header */}
-      <motion.header 
+      <motion.header
         className="bg-gray-900/50 backdrop-blur-sm border-b border-gray-800"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -17,7 +17,9 @@ const PrivacyPolicy = () => {
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-3 group">
               <ArrowLeft className="w-5 h-5 text-primary group-hover:text-accent transition-colors duration-300" />
-              <span className="text-primary group-hover:text-accent transition-colors duration-300">Back to Home</span>
+              <span className="text-primary group-hover:text-accent transition-colors duration-300">
+                Back to Home
+              </span>
             </Link>
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
@@ -33,268 +35,132 @@ const PrivacyPolicy = () => {
 
       {/* Main Content */}
       <main className="w-full max-w-[80%] mx-auto px-4 md:px-6 py-8 md:py-12">
-        {/* Hero Section */}
-        <motion.div 
+        {/* Title */}
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-            Privacy{' '}
+            SHOTBOX{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Policy
+              Privacy Policy
             </span>
           </h1>
-          <p className="text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
-            Your privacy is important to us. This policy explains how we collect, use, and protect your personal information when you use Shotbox.
-          </p>
-          <p className="text-sm text-secondary mt-4">
-            Last updated: October 11, 2025
-          </p>
-        </motion.div>
-
-        {/* Quick Overview */}
-        <motion.div
-          className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-gray-800 mb-16"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Privacy{' '}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Overview
-            </span>
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Eye className="w-8 h-8 text-dark" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Transparency</h3>
-              <p className="text-secondary">We're transparent about what data we collect and how we use it.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Lock className="w-8 h-8 text-dark" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Security</h3>
-              <p className="text-secondary">Your data is protected with industry-standard security measures.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Database className="w-8 h-8 text-dark" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Control</h3>
-              <p className="text-secondary">You have full control over your personal information.</p>
-            </div>
-          </div>
+          <p className="text-secondary text-lg">Effective Date: 11th October 2025</p>
         </motion.div>
 
         {/* Policy Sections */}
-        <div className="max-w-4xl mx-auto space-y-12">
-          {/* Information We Collect */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Information We{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Collect
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Personal Information</h3>
-                  <ul className="text-secondary space-y-2 ml-4">
-                    <li>• Name and email address when you create an account</li>
-                    <li>• Profile information you choose to provide</li>
-                    <li>• Payment information for reward redemptions</li>
-                    <li>• Communication preferences</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Usage Information</h3>
-                  <ul className="text-secondary space-y-2 ml-4">
-                    <li>• Videos watched and duration</li>
-                    <li>• App features used and frequency</li>
-                    <li>• Device information and operating system</li>
-                    <li>• IP address and location data</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Content Information</h3>
-                  <ul className="text-secondary space-y-2 ml-4">
-                    <li>• User-generated content and comments</li>
-                    <li>• Preferences and viewing history</li>
-                    <li>• Interaction with rewards and offers</li>
-                    <li>• Feedback and support communications</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </motion.section>
+        <div className="max-w-4xl mx-auto space-y-10">
+          {[
+            {
+              title: "1. INTRODUCTION",
+              content: `BMZ WORLDWIDE OPC PVT. LTD (“Company,” “we,” “us,” or “our”) owns and operates the SHOTBOX platform — a vertical-format OTT streaming application for Android, iOS, and web. This Privacy Policy explains how we collect, use, disclose, and protect your information while you use our service in compliance with the Information Technology Act, DPDP Act 2023, and related Indian digital media laws.`,
+            },
+            {
+              title: "2. SCOPE & APPLICABILITY",
+              content:
+                "This Policy applies to all users in India accessing SHOTBOX via mobile apps, official websites, or integrated services such as payment gateways and analytics tools.",
+            },
+            {
+              title: "3. INFORMATION WE COLLECT",
+              content:
+                "We collect (a) Personal data such as Name, Email, Mobile, DOB, and Payment credentials; (b) Device data like IP, OS, and device identifiers; (c) Usage data such as watch time and navigation; (d) Behavioral data including preferences and ad interactions.",
+            },
+            {
+              title: "4. METHODS OF COLLECTION",
+              content:
+                "Data is gathered directly from user activity, automatically through cookies or SDKs, and via verified third-party integrations such as Razorpay, Google, and Meta.",
+            },
+            {
+              title: "5. PURPOSE OF PROCESSING",
+              content:
+                "Data is processed to provide services, verify users, complete transactions, personalize content, display ads, comply with laws, and improve platform experience.",
+            },
+            {
+              title: "6. DATA SHARING & DISCLOSURE",
+              content:
+                "Shared only with trusted service providers (e.g., AWS, Akamai, Firebase), regulatory authorities when legally required, and during lawful business transfers.",
+            },
+            {
+              title: "7. DATA RETENTION",
+              content:
+                "Personal data is retained as long as accounts remain active or as legally mandated (financial data: 7 years; usage data: 3 years). Archived data is encrypted or anonymized.",
+            },
+            {
+              title: "8. USER RIGHTS",
+              content:
+                "Users may access, correct, or delete their data; withdraw consent; or manage ad and notification preferences through in-app settings or by contacting support.",
+            },
+            {
+              title: "9. CHILDREN’S PRIVACY",
+              content:
+                "SHOTBOX is not intended for users under 13. Parental consent and data deletion rights apply for minors as per Indian law.",
+            },
+            {
+              title: "10. DATA SECURITY",
+              content:
+                "We implement AES-256 encryption, TLS 1.3, multi-factor authentication, and ISO 27001–certified data centers. Regular security audits ensure data protection.",
+            },
+            {
+              title: "11. INTERNATIONAL TRANSFERS",
+              content:
+                "Limited data may be processed in Singapore and the U.S. under lawful contractual clauses aligned with Section 16 of the DPDP Act, 2023.",
+            },
+            {
+              title: "12. COOKIE POLICY",
+              content:
+                "Cookies and local storage enhance performance and personalization. Users may disable non-essential cookies within app settings.",
+            },
+            {
+              title: "13. GRIEVANCE REDRESSAL",
+              content: `Data Protection Officer (DPO):  
+              Email: dpo@shotbox.in | Phone: +91-9967025984 (10 AM–6 PM IST)  
+              BMZ WORLDWIDE OPC PVT. LTD, Office No. 90, First Floor, Om Heera Panna Mall, Oshiwara, Andheri West, Mumbai – 400053`,
+            },
+            {
+              title: "14. POLICY UPDATES",
+              content:
+                "SHOTBOX may update this Policy for legal or technical reasons. Material updates will be notified via app alerts or registered email.",
+            },
+            {
+              title: "15. GOVERNING LAW",
+              content:
+                "This Policy is governed by the laws of India, and all disputes fall under the exclusive jurisdiction of Mumbai, Maharashtra.",
+            },
+          ].map((section, index) => (
+            <motion.section
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: index * 0.1 }}
+              className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800"
+            >
+              <h2 className="text-2xl font-semibold mb-4 text-primary">{section.title}</h2>
+              <p className="text-secondary leading-relaxed whitespace-pre-line">
+                {section.content}
+              </p>
+            </motion.section>
+          ))}
 
-          {/* How We Use Information */}
+          {/* Contact Section */}
           <motion.section
+            className="text-center mt-16"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 1.5 }}
           >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              How We Use Your{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Information
-              </span>
-            </h2>
             <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Service Provision</h3>
-                  <p className="text-secondary">We use your information to provide, maintain, and improve our services, including personalized content recommendations and reward calculations.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Communication</h3>
-                  <p className="text-secondary">We may contact you about service updates, new features, reward opportunities, and important account information.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Analytics</h3>
-                  <p className="text-secondary">We analyze usage patterns to improve our platform, develop new features, and enhance user experience.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Legal Compliance</h3>
-                  <p className="text-secondary">We may use your information to comply with legal obligations, resolve disputes, and enforce our terms of service.</p>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Data Sharing */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Information{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Sharing
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">We Do NOT Sell Your Data</h3>
-                  <p className="text-secondary">We never sell, rent, or trade your personal information to third parties for marketing purposes.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Service Providers</h3>
-                  <p className="text-secondary">We may share information with trusted service providers who help us operate our platform, such as payment processors and analytics services.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Legal Requirements</h3>
-                  <p className="text-secondary">We may disclose information when required by law, court order, or to protect our rights and the safety of our users.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Business Transfers</h3>
-                  <p className="text-secondary">In the event of a merger or acquisition, user information may be transferred as part of the business assets.</p>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Data Security */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Data{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Security
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Encryption</h3>
-                  <p className="text-secondary">All data transmission is encrypted using industry-standard SSL/TLS protocols.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Secure Storage</h3>
-                  <p className="text-secondary">Personal information is stored in secure, encrypted databases with restricted access.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Access Controls</h3>
-                  <p className="text-secondary">Only authorized personnel have access to user data, and access is logged and monitored.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Regular Audits</h3>
-                  <p className="text-secondary">We regularly audit our security practices and update them to meet industry standards.</p>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Your Rights */}
-          <motion.section
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Your{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Rights
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Access and Portability</h3>
-                  <p className="text-secondary">You can request a copy of your personal data and export it in a portable format.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Correction</h3>
-                  <p className="text-secondary">You can update or correct your personal information at any time through your account settings.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Deletion</h3>
-                  <p className="text-secondary">You can request deletion of your account and associated data at any time.</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-3 text-primary">Opt-out</h3>
-                  <p className="text-secondary">You can opt out of marketing communications while still receiving essential service updates.</p>
-                </div>
-              </div>
-            </div>
-          </motion.section>
-
-          {/* Contact Information */}
-          <motion.section
-            className="text-center"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.6 }}
-          >
-            <h2 className="text-3xl font-bold mb-6 text-white">
-              Contact{' '}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Us
-              </span>
-            </h2>
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
-              <p className="text-secondary mb-6">
-                If you have any questions about this Privacy Policy or our data practices, please contact us:
+              <p className="text-secondary mb-4">
+                For any questions about this Privacy Policy, contact our team:
               </p>
               <div className="flex items-center justify-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:support@shotbox.in" className="text-primary hover:text-accent transition-colors duration-300">
+                <a
+                  href="mailto:support@shotbox.in"
+                  className="text-primary hover:text-accent transition-colors duration-300"
+                >
                   support@shotbox.in
                 </a>
               </div>
@@ -302,8 +168,6 @@ const PrivacyPolicy = () => {
           </motion.section>
         </div>
       </main>
-
-      {/* Global Footer is rendered by App.js */}
     </div>
   );
 };
