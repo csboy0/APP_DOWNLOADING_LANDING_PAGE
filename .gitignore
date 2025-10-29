@@ -1,0 +1,9 @@
+
+# .gitignore
+node_modules
+.build
+dist
+.cache
+*.log
+.env
+.env.*.local

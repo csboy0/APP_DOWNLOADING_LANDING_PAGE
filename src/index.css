@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0E0E0E;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A34F06;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFE36E;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom carousel styles */
+.screenshot-slider .slick-dots,
+.testimonials-slider .slick-dots {
+  bottom: -40px;
+}
+
+@media (min-width: 768px) {
+  .screenshot-slider .slick-dots,
+  .testimonials-slider .slick-dots {
+    bottom: -50px;
+  }
+}
+
+.screenshot-slider .slick-dots li button:before,
+.testimonials-slider .slick-dots li button:before {
+  color: #FFE36E;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .screenshot-slider .slick-dots li button:before,
+  .testimonials-slider .slick-dots li button:before {
+    font-size: 12px;
+  }
+}
+
+.screenshot-slider .slick-dots li.slick-active button:before,
+.testimonials-slider .slick-dots li.slick-active button:before {
+  color: #FFE36E;
+}
+
+.screenshot-slider .slick-prev,
+.screenshot-slider .slick-next,
+.testimonials-slider .slick-prev,
+.testimonials-slider .slick-next {
+  z-index: 10;
+}
+
+.screenshot-slider .slick-prev:before,
+.screenshot-slider .slick-next:before,
+.testimonials-slider .slick-prev:before,
+.testimonials-slider .slick-next:before {
+  display: none;
+}
+
+/* Responsive carousel arrows */
+.screenshot-slider .slick-prev,
+.screenshot-slider .slick-next,
+.testimonials-slider .slick-prev,
+.testimonials-slider .slick-next {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  .screenshot-slider .slick-prev,
+  .screenshot-slider .slick-next,
+  .testimonials-slider .slick-prev,
+  .testimonials-slider .slick-next {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 767px) {
+  .screenshot-slider .slick-prev,
+  .testimonials-slider .slick-prev {
+    left: 8px;
+  }
+  
+  .screenshot-slider .slick-next,
+  .testimonials-slider .slick-next {
+    right: 8px;
+  }
+}
+
+/* Loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
