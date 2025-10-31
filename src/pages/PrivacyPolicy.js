@@ -116,7 +116,7 @@ const PrivacyPolicy = () => {
             {
               title: "13. GRIEVANCE REDRESSAL",
               content: `Data Protection Officer (DPO):  
-              Email: dpo@shotbox.in | Phone: +91-9967025984 (10 AM–6 PM IST)  
+              Email: legal@shotbox.in | Phone: +91-9967025984 (10 AM–6 PM IST)  
               BMZ WORLDWIDE OPC PVT. LTD, Office No. 90, First Floor, Om Heera Panna Mall, Oshiwara, Andheri West, Mumbai – 400053`,
             },
             {
